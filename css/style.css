@@ -39,17 +39,18 @@
 .banner {
   display: flex;
   background: linear-gradient(to right, indianred, skyblue, lightcyan);
+  transition: 5s;
 
   & img:nth-child(1) {
     padding-left: 3%;
     width: 10%;
     align-self: center;
+    transition: inherit;
     transform: rotate(360deg);
-    transition: 5s;
   }
 
   & img:nth-child(2) {
-    transition: 5s;
+    transition: inherit;
     transform: scale(0.5);
   }
 
@@ -60,7 +61,7 @@
     align-self: center;
     text-align: center;
     margin-left: 5%;
-    transition: 5s;
+    transition: inherit;
     text-shadow: 5px 3px 2px pink;
     color: brown;
   }
@@ -110,7 +111,11 @@
 
 .tarjeta {
   display: grid;
-  padding: 50px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 20% 1px;
+  background-color: aliceblue;
+  box-shadow: 20px 20px 15px darkgrey;
 
   & img {
     width: 400px;
